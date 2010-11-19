@@ -1,5 +1,3 @@
-Read( "../gap/PurityViaAuslanderDuals.g" );
-
 LoadPackage( "RingsForHomalg" );
 
 R := HomalgFieldOfRationalsInDefaultCAS( ) * "D1..4";
@@ -20,6 +18,8 @@ D2*D4, 0, D2*D4, 0, -D1*D4, -D3*D4, -D2*D3, 0, D1^2+D3^2, -D1*D2, \
 LoadPackage( "Modules" );
 
 M := LeftPresentation( mat );
+
+LoadPackage( "AbelianSystems" );
 
 filt := PurityFiltrationViaAuslanderDuals( M );
 

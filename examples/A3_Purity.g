@@ -1,6 +1,6 @@
-Read( "../gap/PurityViaAuslanderDuals.g" );
-
 Read( "Coupling.g" );
+
+LoadPackage( "AbelianSystems" );
 
 filt := PurityFiltrationViaAuslanderDuals( N );
 

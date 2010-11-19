@@ -1,7 +1,5 @@
 ## An exmaple of Janet used by Pommaret and Quadrat
 
-Read( "../gap/PurityViaAuslanderDuals.g" );
-
 LoadPackage( "RingsForHomalg" );
 
 Qxyz := HomalgFieldOfRationalsInDefaultCAS( ) * "d1,d2,d3";
@@ -18,6 +16,8 @@ d1, -d1, -2*d1, 0 \
 LoadPackage( "Modules" );
 
 W := LeftPresentation( wmat );
+
+LoadPackage( "AbelianSystems" );
 
 filt := PurityFiltrationViaAuslanderDuals( W );
 

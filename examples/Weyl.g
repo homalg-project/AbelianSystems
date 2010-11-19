@@ -1,5 +1,3 @@
-Read( "../gap/PurityViaAuslanderDuals.g" );
-
 Read( "Coupling.g" );
 
 LoadPackage( "InjectivePoints" );
@@ -7,3 +5,6 @@ LoadPackage( "InjectivePoints" );
 SetAsOriginalPresentation( N );
 
 F := LeftInjectiveModule( A3 );
+
+LoadPackage( "AbelianSystems" );
+

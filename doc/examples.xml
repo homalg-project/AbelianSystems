@@ -1,0 +1,16 @@
+<!-- 
+
+  examples.xml            AbelianSystems package documentation
+
+  Copyright 2010, Mohamed Barakat, University of Kaiserslautern
+                  Alban Quadrat, INRIA Saclay-Île-de-France
+-->
+
+<Chapter Label="examples">
+<Heading>Examples</Heading>
+
+Here comes text.<P/>
+
+<!-- ############################################################ -->
+
+</Chapter>

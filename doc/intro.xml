@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+
+  intro.xml                 AbelianSystems package documentation
+
+  Copyright 2010, Mohamed Barakat, University of Kaiserslautern
+                  Alban Quadrat, INRIA Saclay-Île-de-France
+
+This chapter gives a short introduction and explains the philosophy
+behind the package.
+
+-->
+
+<Chapter Label="intro">
+<Heading>Introduction</Heading>
+
+<Cite Key="GAP4"/>
+
+</Chapter>
+

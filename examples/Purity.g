@@ -1,6 +1,6 @@
-Read( "../gap/PurityViaAuslanderDuals.g" );
-
 Read( "ReducedBasisOfModule.g" );
+
+LoadPackage( "AbelianSystems" );
 
 filt := PurityFiltrationViaAuslanderDuals( W );
 
