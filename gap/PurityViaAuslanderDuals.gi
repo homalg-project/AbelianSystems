@@ -1,6 +1,6 @@
 InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
   function( arg )
-    local nargs, q, M, F, Dualize, HF, N, n, PN, vert, cm, t, defs, eta, epsilon,
+    local nargs, q, M, FM, HF, N, n, PN, vert, cm, t, defs, eta, epsilon,
           phi, prefilt, degrees, purity_telescope, purity;
     
     nargs := Length( arg );
@@ -13,15 +13,13 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
     
     M := arg[nargs];
     
-    F := Resolution( q, M );
+    FM := Resolution( q, M );
     
-    if IsRightAcyclic( F ) then
-        F := ShortenResolution( M );
+    if IsRightAcyclic( FM ) then
+        FM := ShortenResolution( M );
     fi;
     
-    Dualize := Hom;
-    
-    HF := Dualize( F );
+    HF := Dualize( FM );
     
     N := List( [ 0 .. HighestDegree( HF ) - 1 ], i -> Cokernel( CertainMorphism( HF, i ) ) );
     
@@ -86,7 +84,7 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
     
     SetIsPurityFiltration( purity, true );
     
-    if HasIsRightAcyclic( F ) and IsRightAcyclic( F ) then
+    if HasIsRightAcyclic( FM ) and IsRightAcyclic( FM ) then
         SetIsCompletePurityFiltration( purity, true );
     fi;
     
