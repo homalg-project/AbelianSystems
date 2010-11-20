@@ -66,7 +66,7 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
     
     epsilon := NatTrIdToHomHom_R( HullObjectInResolution( M ) );
     
-    phi := PreCompose( PreCompose( NaturalGeneralizedEmbedding( t ), eta ) / epsilon, FreeHullEpi( M ) );
+    phi := PreCompose( PreCompose( NaturalGeneralizedEmbedding( t ), eta ) / epsilon, HullEpi( M ) );
     
     Assert( 1, IsMorphism( phi ) );
     

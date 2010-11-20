@@ -15,3 +15,8 @@ M := LeftPresentation( M );
 
 LoadPackage( "AbelianSystems" );
 
+filt := PurityFiltrationViaAuslanderDuals( M );
+
+m := IsomorphismOfFiltration( filt );
+
+Display( TimeToString( homalgTime( A1 ) ) );
