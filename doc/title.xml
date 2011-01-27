@@ -4,7 +4,7 @@
 
   title.xml                 AbelianSystems package documentation
 
-  Copyright 2010, Mohamed Barakat, University of Kaiserslautern
+  Copyright 2011, Mohamed Barakat, University of Kaiserslautern
                   Alban Quadrat, INRIA Saclay-Île-de-France
 -->
 
@@ -49,10 +49,10 @@
     <Email>alban.quadrat@inria.fr</Email>
     <Homepage>http://www-sop.inria.fr/members/Alban.Quadrat/</Homepage>
   </Author>
-  <Date>November 2010</Date>
+  <Date>January 2011</Date>
   
   <Copyright>
-    &copyright; 2010 by Mohamed Barakat and Alban Quadrat.<P/>
+    &copyright; 2011 by Mohamed Barakat and Alban Quadrat.<P/>
     
     This package may be distributed under the terms and conditions of the
     GNU Public License Version 2.
