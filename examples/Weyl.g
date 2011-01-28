@@ -1,10 +1,10 @@
 Read( "Coupling.g" );
 
-LoadPackage( "InjectivePoints" );
+LoadPackage( "D-Modules" );
 
 SetAsOriginalPresentation( N );
 
-F := LeftInjectiveModule( A3 );
+F := InjectiveLeftModule( A3 );
 
 LoadPackage( "AbelianSystems" );
 
