@@ -39,9 +39,9 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
                                   ) / FirstMorphismOfResolution( N[j + 1] )
                           ) );
     
-    cm := List( [ 1 .. n - 1 ], j -> HomalgChainMap( vert[j], PN[j], PN[j + 1], [ 0, 1 ] ) );
+    cm := List( [ 1 .. n - 1 ], j -> HomalgChainMorphism( vert[j], PN[j], PN[j + 1], [ 0, 1 ] ) );
     
-    Perform( cm, CompleteChainMap );
+    Perform( cm, CompleteChainMorphism );
     
     Assert( 1, ForAll( cm, IsMorphism ) );
     
