@@ -1,3 +1,21 @@
+#############################################################################
+##
+##  PurityViaAuslanderDuals.gi                        AbelianSystems package
+##
+##  Copyright 2010-2011, Mohamed Barakat, University of Kaiserslautern
+##                       Alban Quadrat, INRIA Saclay-Île-de-France
+##
+##  Implementations for the purity filtration via Auslander duals.
+##
+#############################################################################
+
+####################################
+#
+# methods for global functions:
+#
+####################################
+
+##
 InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
   function( arg )
     local nargs, q, M, FM, HF, N, n, PN, vert, cm, t, defs, eta, epsilon,
