@@ -28,13 +28,13 @@ Subtitle := "A homalg based package for systems over computable Abelian categori
 ##  See '?Extending: Version Numbers' in GAP help for an explanation
 ##  of valid version numbers. For an automatic package distribution update
 ##  you must provide a new version number even after small changes.
-Version := "2011.04.16",
+Version := "2011.06.16",
 ##  Please adjust also the VERSION file in the package directory when
 ##  changing this.
 
 ##  Release date of the current version in dd/mm/yyyy format.
 # 
-Date := "16/04/2011",
+Date := "16/06/2011",
 
 ##  URL of the archive(s) of the current package release, but *without*
 ##  the format extension(s), like '.zoo', which are given next.
@@ -262,7 +262,7 @@ Dependencies := rec(
   # list of pairs [package name, (least) version],  package name is case
   # insensitive, least version denoted with '>=' prepended to version string.
   # without these, the package will not load
-  NeededOtherPackages := [ [ "homalg", ">= 2011.04.16" ] ],
+  NeededOtherPackages := [ [ "homalg", ">= 2011.06.16" ] ],
   # without these the package will issue a warning while loading
   # SuggestedOtherPackages := [],
   SuggestedOtherPackages := [ [ "GAPDoc", ">= 1.0" ] ],

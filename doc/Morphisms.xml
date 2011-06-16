@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+
+  Modules.xml            AbelianSystems package documentation
+
+  Copyright 2011, Mohamed Barakat, University of Kaiserslautern
+                  Alban Quadrat, INRIA Saclay-Île-de-France
+
+-->
+
+<Chapter Label="Morphisms">
+<Heading>Morphisms</Heading>
+
+<Section Label="Morphisms:Operations">
+<Heading>Morphisms: Operations and Functions</Heading>
+
+<#Include Label="ProductOfCokernelEpiAndImageObjectEpi">
+<#Include Label="CoproductOfKernelEmbAndImageObjectEmb">
+<#Include Label="DirectSumDecompositionIsomorphism">
+<#Include Label="DirectSumDecomposition">
+
+</Section>
+
+<!-- ############################################################ -->
+
+</Chapter>

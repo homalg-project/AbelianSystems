@@ -61,6 +61,7 @@
 
 <#Include SYSTEM "intro.xml">
 <#Include SYSTEM "install.xml">
+<#Include SYSTEM "Morphisms.xml">
 </Body>
 
 <Bibliography Databases="AbelianSystemsBib.xml"/>
