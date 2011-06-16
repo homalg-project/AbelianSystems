@@ -90,6 +90,8 @@ InstallMethod( DirectSumDecompositionIsomorphism,
     
     SetIsIsomorphism( iso, true );
     
+    UpdateObjectsByMorphism( iso );
+    
     return iso;
     
 end );
