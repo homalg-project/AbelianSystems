@@ -8,12 +8,7 @@ LoadPackage( "AbelianSystems" );
 
 LoadPackage( "GAPDoc" );
 
-list := [
-         "../gap/AbelianSystems.gd",
-         "../gap/AbelianSystems.gi",
-         "../gap/PurityViaAuslanderDuals.gd",
-         "../gap/PurityViaAuslanderDuals.gi",
-         ];
+Read( "ListOfDocFiles.g" );
 
 size := SizeScreen( );
 SizeScreen([80]);

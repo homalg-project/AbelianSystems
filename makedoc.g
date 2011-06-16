@@ -11,12 +11,7 @@ SetGapDocLaTeXOptions( "utf8" );
 bib := ParseBibFiles( "doc/AbelianSystems.bib" );
 WriteBibXMLextFile( "doc/AbelianSystemsBib.xml", bib );
 
-list := [
-         "../gap/AbelianSystems.gd",
-         "../gap/AbelianSystems.gi",
-         "../gap/PurityViaAuslanderDuals.gd",
-         "../gap/PurityViaAuslanderDuals.gi",
-         ];
+Read( "ListOfDocFiles.g" );
 
 PrintTo( "VERSION", PackageInfo( "AbelianSystems" )[1].Version );
 

@@ -2,7 +2,7 @@ all: doc test
 
 doc: doc/manual.six
 
-doc/manual.six: makedoc.g maketest.g \
+doc/manual.six: makedoc.g maketest.g ListOfDocFiles.g \
 		PackageInfo.g \
 		doc/AbelianSystems.bib doc/*.xml \
 		gap/*.gd gap/*.gi examples/*.g
@@ -15,7 +15,7 @@ test:	doc
 	gap maketest.g
 
 archive: test
-	(mkdir -p ../tar; cd ..; tar czvf tar/AbelianSystems.tar.gz --exclude ".DS_Store" --exclude "*~" AbelianSystems/doc/*.* AbelianSystems/doc/clean AbelianSystems/gap/*.{gi,gd} AbelianSystems/{CHANGES,PackageInfo.g,README,VERSION,init.g,read.g,makedoc.g,makefile,maketest.g} AbelianSystems/examples/*.g)
+	(mkdir -p ../tar; cd ..; tar czvf tar/AbelianSystems.tar.gz --exclude ".DS_Store" --exclude "*~" AbelianSystems/doc/*.* AbelianSystems/doc/clean AbelianSystems/gap/*.{gi,gd} AbelianSystems/{CHANGES,PackageInfo.g,README,VERSION,init.g,read.g,makedoc.g,makefile,maketest.g,ListOfDocFiles.g} AbelianSystems/examples/*.g)
 
 WEBPOS=public_html
 WEBPOS_FINAL=~/Sites/AbelianSystems/
