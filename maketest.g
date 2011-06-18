@@ -4,7 +4,14 @@
 ##  Call this with GAP.
 ##
 
-LoadPackage( "AbelianSystems" );
+LoadPackage( "Modules" );
+
+LoadPackage( "SystemTheory" );
+
+LoadPackage( "IO_ForHomalg" );
+
+HOMALG_IO.show_banners := false;
+HOMALG_IO.use_common_stream := true;
 
 LoadPackage( "GAPDoc" );
 

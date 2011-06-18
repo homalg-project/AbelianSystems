@@ -104,6 +104,7 @@ end );
 ##  <ManSection>
 ##    <Attr Arg="phi" Name="DirectSumDecomposition" Label="for an idempotent"/>
 ##    <Description>
+##      The direct sum decomposition induced by the idempotent <A>phi</A> of the endomorphism ring.
 ##    <Listing Type="Code"><![CDATA[
 InstallMethod( DirectSumDecomposition,
         "for an idempotent",
@@ -115,6 +116,7 @@ InstallMethod( DirectSumDecomposition,
     
 end );
 ##  ]]></Listing>
+##      <#Include Label="TankModel:example">
 ##    </Description>
 ##  </ManSection>
 ##  <#/GAPDoc>

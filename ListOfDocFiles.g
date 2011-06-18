@@ -5,4 +5,5 @@ list := [
          "../gap/PurityViaAuslanderDuals.gi",
          "../gap/Morphisms.gd",
          "../gap/Morphisms.gi",
+         "../examples/TankModel.g",
          ];
