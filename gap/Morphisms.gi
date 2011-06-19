@@ -77,7 +77,7 @@ InstallMethod( DirectSumDecompositionIsomorphism,
         [ IsHomalgEndomorphism ],
         
   function( phi )
-    local iso;
+    local iso, T, pi1, pi2, iota1, iota2, T1, T2;
     
     if not IsIdempotent( phi ) then
         TryNextMethod( );
@@ -91,6 +91,24 @@ InstallMethod( DirectSumDecompositionIsomorphism,
     SetIsIsomorphism( iso, true );
     
     UpdateObjectsByMorphism( iso );
+    
+    T := Range( iso );
+    
+    pi1 := EpiOnLeftFactor( T );
+    pi2 := EpiOnRightFactor( T );
+    
+    iota1 := MonoOfLeftSummand( T );
+    iota2 := MonoOfRightSummand( T );
+    
+    T1 := Range( pi1 );
+    T2 := Range( pi2 );
+    
+    if not IsZero( phi ) and not IsOne( phi ) then
+        SetIsZero( T1, false );
+        SetIsZero( T2, false );
+    fi;
+    
+    SetPropertiesOfDirectSum( [ T1, T2 ], T, iota1, iota2, pi1, pi2 );
     
     return iso;
     
