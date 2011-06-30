@@ -31,7 +31,7 @@ Subtitle := "A homalg based package for systems over computable Abelian categori
 Version := Maximum( [
   "2011.06.20", ## Alban's version
 ## this line prevents merge conflicts
-  "2011.06.23", ## Mohamed's version
+  "2011.06.25", ## Mohamed's version
 ] ),
 ##  Please adjust also the VERSION file in the package directory when
 ##  changing this.
