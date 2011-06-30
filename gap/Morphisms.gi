@@ -30,8 +30,11 @@ InstallMethod( ProductOfCokernelEpiAndImageObjectEpi,
     coker_epi := CokernelEpi( phi );
     im_epi := ImageObjectEpi( phi );
     
-    ByASmallerPresentation( coker_epi );
-    ByASmallerPresentation( im_epi );
+    ByASmallerPresentation( Range( coker_epi ) );
+    ByASmallerPresentation( Range( im_epi ) );
+    
+    DecideZero( coker_epi );
+    DecideZero( im_epi );
     
     return ProductMorphism( coker_epi, im_epi );
     
@@ -56,8 +59,11 @@ InstallMethod( CoproductOfKernelEmbAndImageObjectEmb,
     ker_emb := KernelEmb( phi );
     im_emb := ImageObjectEmb( phi );
     
-    ByASmallerPresentation( ker_emb );
-    ByASmallerPresentation( im_emb );
+    ByASmallerPresentation( Source( ker_emb ) );
+    ByASmallerPresentation( Source( im_emb ) );
+    
+    DecideZero( ker_emb );
+    DecideZero( im_emb );
     
     return ProductMorphism( ker_emb, im_emb );
     
