@@ -116,6 +116,8 @@ InstallMethod( DirectSumDecompositionIsomorphism,
     
     SetPropertiesOfDirectSum( [ T1, T2 ], T, iota1, iota2, pi1, pi2 );
     
+    UpdateObjectsByMorphism( iso );
+    
     return iso;
     
 end );
