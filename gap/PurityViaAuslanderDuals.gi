@@ -80,9 +80,9 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
                            CokernelEpi( CertainMorphism( HF, 0 ) ) / CokernelEpi( FirstMorphismOfResolution( N[1] ) )
                            ) / FirstMorphismOfResolution( N[1] ) );
     
-    epsilon := NatTrIdToHomHom_R( HullObjectInResolution( M ) );
+    epsilon := NatTrIdToHomHom_R( CoveringObject( M ) );
     
-    phi := PreCompose( PreCompose( NaturalGeneralizedEmbedding( t ), eta ) / epsilon, HullEpi( M ) );
+    phi := PreCompose( PreCompose( NaturalGeneralizedEmbedding( t ), eta ) / epsilon, CoveringEpi( M ) );
     
     Assert( 1, IsMorphism( phi ) );
     
