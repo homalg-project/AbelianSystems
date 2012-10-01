@@ -19,4 +19,4 @@ MakeGAPDocDoc( "doc", "AbelianSystems", list, "AbelianSystems" );
 
 GAPDocManualLab( "AbelianSystems" );
 
-quit;
+QUIT;

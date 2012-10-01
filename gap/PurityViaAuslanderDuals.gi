@@ -61,7 +61,7 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
     
     Perform( cm, CompleteChainMorphism );
     
-    Assert( 1, ForAll( cm, IsMorphism ) );
+    Assert( 3, ForAll( cm, IsMorphism ) );
     
     Perform( cm, function( m ) SetIsMorphism( m, true ); end );
     
@@ -84,7 +84,7 @@ InstallGlobalFunction( PurityFiltrationViaAuslanderDuals,
     
     phi := PreCompose( PreCompose( NaturalGeneralizedEmbedding( t ), eta ) / epsilon, CoveringEpi( M ) );
     
-    Assert( 1, IsMorphism( phi ) );
+    Assert( 3, IsMorphism( phi ) );
     
     SetIsMorphism( phi, true );
     

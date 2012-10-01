@@ -92,7 +92,7 @@ InstallMethod( DirectSumDecompositionIsomorphism,
     iso := ProductOfCokernelEpiAndImageObjectEpi( phi );
     
     ## check assertion:
-    Assert( 1, IsIsomorphism( iso ) );
+    Assert( 3, IsIsomorphism( iso ) );
     
     SetIsIsomorphism( iso, true );
     
