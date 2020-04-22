@@ -242,8 +242,6 @@ PackageDoc := rec(
   # use same as in GAP            
   BookName  := "AbelianSystems",
   # format/extension can be one of .zoo, .tar.gz, .tar.bz2, -win.zip
-  Archive := 
-    "http://www-sop.inria.fr/members/Alban.Quadrat/AbelianSystems/AbelianSystems.tar.gz",
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0.html",
   PDFFile   := "doc/manual.pdf",
